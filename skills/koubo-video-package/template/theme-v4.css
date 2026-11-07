@@ -1,0 +1,4 @@
+/* v4: v3 energy plus bilingual captions. */
+#bloom{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 45%,rgba(255,248,235,.98),rgba(255,244,224,.55) 55%,transparent 80%)}
+#sub .en{display:block;margin-top:10px;font-size:30px;font-weight:700;line-height:1.25;font-family:"SF Pro Text","Helvetica Neue",sans-serif;letter-spacing:.2px;text-shadow:0 0 2px #000,0 2px 0 #000,2px 0 0 #000,-2px 0 0 #000,0 -2px 0 #000,0 4px 10px rgba(0,0,0,.4)}
+#person{box-shadow:none}
