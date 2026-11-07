@@ -11,6 +11,8 @@
 | `koubo-video-script` | 写口播脚本：快讯观点、工具教程、榜单盘点三种结构，每句标好画面类型 |
 | `koubo-video-package` | 包装成片：降噪、粗剪、字幕、抠像、版式和动效、混音、封面、数字人 |
 
+![整体流程](docs/images/workflow.png)
+
 ---
 
 ## 开始前要准备的东西
@@ -87,6 +89,8 @@ ln -s "$PWD/koubo-ai-skills/skills/koubo-video-package" ~/.claude/skills/
 
 ## 数字人怎么做（简版）
 
+![数字人流水线](docs/images/avatar-pipeline.png)
+
 1. **声音**：录 30 秒以上的干净口播，降噪后用 MiniMax 克隆一次，以后台词直接合成你的声音。
 2. **定妆照**：用你自己的 7 张左右真实照片做参考，一次生成 4K 竖屏。不要拿 AI 写真当参考，也不要在生成图上反复改。
 3. **对口型**：
@@ -98,6 +102,16 @@ ln -s "$PWD/koubo-ai-skills/skills/koubo-video-package" ~/.claude/skills/
    | Wan 3.0 | 模型自己生成 | 要 |
 
 4. **省钱**：只给露脸说话的镜头做对口型，小头像用静态照片加动效。
+
+![对口型三个模型](docs/images/lipsync-models.png)
+
+用 Seedance 或 Wan 时，要把你的声音换回去：
+
+![换回原声](docs/images/voice-align.png)
+
+## 包装做了什么
+
+![包装前后](docs/images/before-after.png)
 
 详细规则见 `skills/koubo-video-package/references/avatar.md`。
 
